@@ -1,0 +1,102 @@
+body {
+	color: rgb(129, 211, 6);
+	background-color: black;
+	height: 100%;
+	font-size: 1em;
+}
+body h3 {
+	text-align: center;
+}
+div.left-bar, div.right-bar {
+	border: 1px solid green;
+}
+div.left-bar {
+	width: 30%;
+	height: 800px;
+	float: left;
+	position: relative;
+}
+div.left-bar .img {
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	background-color: rgb(31, 48, 6);
+}
+div.nameage {
+	margin-top: 300px;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	background-color: rgb(54, 63, 55);
+	z-index: 1;
+}
+div.left-bar .stats {
+	width: 100%;
+	height: 60px;
+	background-color: rgb(13, 28, 43);
+	margin-top: 350px;
+}
+div.left-bar .stats ul {
+	list-style: none;
+	border: 1px solid green;
+	border-radius: 10px;
+}
+div.left-bar .stats .label {
+	float: left;
+	padding: 0 10px;
+}
+div.nameage #name, div.nameage #age {
+	margin: 10px 10px;
+}
+div.right-bar {
+	height: 800px;
+	position: relative;
+}
+div.right-bar .coordinate {
+	background: rgb(53, 50, 50);
+	margin-left: 30.09%;
+	height: 40px;
+}
+div.right-bar .xy {
+	margin-left: 30.09%;
+	height: 50px;
+	background-color: rgb(54, 63, 55);
+	z-index: 2;
+}
+div.right-bar  #x, div.right-bar #y {
+	margin: 15px 10px;
+}
+div.right-bar .text {
+	margin-left: 30.09%;
+	height: 100%;
+}
+div.right-bar .text p {
+	padding: 20px 40px;
+	border: 1px solid green;
+	border-radius: 10px;
+	font-size: 1.2rem;
+	background-color: rgb(6, 39, 19);
+}
+
+
+/* Игровое поле */
+
+.field {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	background-color: rgb(31, 48, 6);
+	margin: auto;
+}
+.player {
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	background-color: greenyellow;
+}
+.target {
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	background-color: red;
+}
