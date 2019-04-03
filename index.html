@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Fallouter</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="objects/field.js"></script>
+	<script type="text/javascript" src="objects/locations.js"></script>
+	<script type="text/javascript" src="objects/mobs.js"></script>
+	<script type="text/javascript" src="objects/global.js"></script>
+	<script type="text/javascript" src="objects/items/food.js"></script>
+	<script type="text/javascript" src="objects/items/medicine.js"></script>
+	<script type="text/javascript" src="objects/items/other.js"></script>
+	<script type="text/javascript" src="objects/items/special.js"></script>
+	<script type="text/javascript" src="objects/items/weapons.js"></script>
+	
+	
+</head>
+<body>
+	<div class="left-bar">
+		<div class="img">
+			<img id="location_photo" src="" width="100%" alt="Фото локации">
+		</div>
+		<div class="nameage">
+			<input type="text" id="name" placeholder="Ваше имя"">
+			<input type="text" id="age"	placeholder="Ваш возраст">
+			<button onclick="nameAge();">Ввод</button>
+		</div>
+		<div class="stats">
+			<ul>
+				<span class="label">Здоровье: </span><li id="health"></li>
+				<span class="label">Радиация: </span><li id="radiation"></li>
+				<span class="label">Энергия: </span><li id="energy"></li>
+			</ul>
+		</div>
+		<h3>Карта</h3>
+		<div class="field">
+			<div class="player" id="player"></div>
+			<div class="target" id="target"></div>
+		</div>
+	</div>
+	<div class="right-bar">
+		<div class="coordinate" id="coordinate">
+
+		</div>
+		<div class="xy">
+			<input type="text" id="x" placeholder="введите x">
+			<input type="text" id="y" placeholder="введите y">
+			<button onclick="playerTarget();">Ввод</button>
+			<button onclick="save();">Сохранить</button>
+		</div>
+		<div class="text" id="text">
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="functions/functions.js"></script>
+	<script type="text/javascript" src="functions/calculate.js"></script>
+	<script type="text/javascript" src="functions/spawn.js"></script>
+	<script type="text/javascript" src="objects/player.js"></script>
+	<script type="text/javascript" src="bible.js"></script>
+	<script type="text/javascript" src="save.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
