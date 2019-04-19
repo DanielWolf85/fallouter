@@ -35,7 +35,7 @@ var game = setInterval(function() {										// ИГРОВОЙ ЦИКЛ
 
 	// gameOver();
 
-}, 20000);
+}, 2000);
 
 
 
