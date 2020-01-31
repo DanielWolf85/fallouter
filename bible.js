@@ -81,6 +81,8 @@ function getMessage() {
 	mind[61] = "Эта точка назначения за тридевять земель!";
 	mind[62] = "Шел " + global.time.year + " год...";
 	mind[63] = "Я путешествую " + parseInt(global.time.day) + " дней.. Или.. дня.";
+	mind[64] = "Похоже разраб вернулся к этому проекту. Надеюсь, что меня доделают..";
+	mind[65] = "Хоть ты и PHP-шник.. Разраб, переведи нас на unuty!";
 
 	if (player.health.value <= 50) {
 		message.push(warning[0] = "Я плохо себя чувствую. Здоровье: " + player.health.value);
